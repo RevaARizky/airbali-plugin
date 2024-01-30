@@ -1,0 +1,28 @@
+.slider-block {
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+    .navigation-slider .navigation.active svg circle {
+        fill: #D75C00;
+    }
+
+    .slide-item .overlay-content-wrapper {
+        opacity: 0;
+        transition: opacity .4s ease;
+    }
+
+    .slide-item.active .overlay-content-wrapper {
+        opacity: 1;
+    }
+
+    .slide-item .overlay-button-wrapper {
+        rotate: 0deg;
+        transition: all .4s ease;
+    }
+    .slide-item.active .overlay-button-wrapper {
+        rotate: 45deg;
+    }
+}

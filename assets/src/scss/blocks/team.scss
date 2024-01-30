@@ -1,0 +1,16 @@
+.team-block {
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    @media (min-width: 1280px) {
+
+      .xl\:col-span-4 {
+        grid-column: span 4 / span 4 !important;
+      }
+    
+      .xl\:col-span-8 {
+        grid-column: span 8 / span 8 !important;
+      }
+    }
+}
