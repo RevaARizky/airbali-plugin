@@ -204,8 +204,8 @@ class Elementor_Text_Hover_Widget extends \Elementor\Widget_Base {
 	protected function render() {
         $settings = $this->get_settings_for_display();
         ?>
-        <section class="bg-dark-grey text-hover-block custom-block">
-			<div class="inner-section relative">
+        <section class="text-hover-block custom-block">
+			<div class="inner-section relative bg-dark-grey">
 				<div class="grid grid-cols-12 relative z-10">
 					<?php foreach($settings['items'] as $index=>$content) : ?>
 						<div class="xl:col-span-3 col-span-12 xl:h-screen h-[300px] content-wrapper relative" data-index="<?= $index ?>">

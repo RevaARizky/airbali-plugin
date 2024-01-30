@@ -226,8 +226,8 @@ class Elementor_Itrac_Widget extends \Elementor\Widget_Base {
 	 */
 	protected function render() {
         $settings = $this->get_settings_for_display(); ?>
-		<section class="itrac-block custom-block w-full" style="background-image: url(<?= $settings['bg_image']['url'] ?>); background-repeat: no-repeat; background-size: cover; background-position: center;">
-			<div class="inner flex flex-col justify-center items-center h-[600px]">
+		<section class="itrac-block custom-block" style="background-image: url(<?= $settings['bg_image']['url'] ?>); background-repeat: no-repeat; background-size: cover; background-position: center;">
+			<div class="inner flex flex-col w-full justify-center items-center h-[600px]">
 
 				<div class="main-image-wrapper relative xl:mb-8 mb-10">
 					<?= $settings['main_image'] ?>

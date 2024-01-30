@@ -207,34 +207,8 @@ class Elementor_Slider_Widget extends \Elementor\Widget_Base {
 	protected function render() {
         $settings = $this->get_settings_for_display();
         ?>
-		<style>
-			.slider-block.custom-block .image-wrapper {
-				padding-top: 150%;
-			}
-			@media(max-width: 1024px) {
-				.object-left {
-					object-position: left;
-				}
-				.object-right {
-					object-position: right;
-				}
-				.object-center {
-					object-position: center;
-				}
-			}
-			@media(min-width:768px) {
-				.slider-block.custom-block .image-wrapper {
-					padding-top: 100%;
-				}
-			}
-			@media(min-width: 1024px) {
-				.slider-block.custom-block .image-wrapper {
-					padding-top: 60%;
-				}
-			}
-		</style>
-        <section class="bg-dark-grey slider-block custom-block overflow-x-hidden calculate-container" data-calculate-container="120">
-			<div class="outer-wrapper">
+        <section class="slider-block custom-block calculate-container" data-calculate-container="120">
+			<div class="outer-wrapper bg-dark-grey overflow-x-hidden">
 				<div class="container relative">
 					<div class="navigation-slider gap-x-10 px-12 py-4 justify-center mt-4 hidden lg:flex" style="border-top: 1px solid #fff; border-bottom: 1px solid #fff; margin-bottom: 2.2rem;">
 						<?php foreach($settings['slider_items'] as $index => $value) : ?>

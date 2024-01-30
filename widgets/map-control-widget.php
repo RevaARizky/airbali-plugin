@@ -192,8 +192,8 @@ class Elementor_Map_Control_Widget extends \Elementor\Widget_Base {
 	 */
 	protected function render() {
         $settings = $this->get_settings_for_display(); ?>
-		<div class="custom-widget map-control hidden">
-			<div class="map-control-widget absolute left-20 bottom-0" style="z-index: 9999; bottom: 30px!important;">
+		<div class="custom-widget map-control">
+			<div class="hidden map-control-widget absolute left-20 bottom-0" style="z-index: 9999; bottom: 30px!important;">
 				<div class="inner flex gap-x-4 px-6 py-4 items-center bg-[#636569]" style="background-color: #D75C00;">
 					<input checked class="map-icon-trigger" type="checkbox">
 					<p style="color: #fff;">Show Icon</p>
