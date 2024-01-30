@@ -195,8 +195,8 @@ class Elementor_Carousel_Widget extends \Elementor\Widget_Base {
         $settings = $this->get_settings_for_display();
 		// var_dump($settings);
         ?>
-        <section class="bg-dark-grey carousel-block custom-block text-white overflow-x-hidden" style="min-height: unset!important">
-			<div class="outer-wrapper">
+        <section class="carousel-block custom-block" style="min-height: unset!important">
+			<div class="outer-wrapper bg-dark-grey text-white overflow-x-hidden">
 				<div class="container px-0 bg-darker-grey">
 					<div class="grid grid-cols-12">
 						<div class="md:col-span-7 col-span-12">
