@@ -7,21 +7,12 @@ import { ScrollToPlugin } from "gsap/all"
 
     document.addEventListener('DOMContentLoaded', function() {
         var calculateContainer = 0
-        gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
+        gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
         if(!document.querySelector('.slider-block.custom-block')) {
             return false
         }
         if(document.querySelector('.slider-block.calculate-container')) {
             calculateContainer = parseInt(document.querySelector('.slider-block.calculate-container').dataset.calculateContainer)
-        }
-        if(document.querySelector('.animate-whole-page')) {
-            ScrollSmoother.create({
-                content: 'main#primary',
-                effects: true,
-                smoothTouch: .1,
-                smooth: 1.8,
-                normalizeScroll: true,
-            })
         }
         let mm = gsap.matchMedia()
 

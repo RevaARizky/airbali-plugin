@@ -62,7 +62,11 @@ import gsap from "gsap";
                     el.anim.play()
                 }
                 el.addEventListener('mouseenter', e=> {
-                    contentItems.forEach(ele => ele.anim.reverse())
+                    contentItems.forEach((ele, k) => {
+                        if(i != k) {
+                            ele.anim.reverse()
+                        }
+                    })
                     el.anim.play()
                 })
             // })

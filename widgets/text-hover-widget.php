@@ -216,12 +216,12 @@ class Elementor_Text_Hover_Widget extends \Elementor\Widget_Base {
 									</div>
 									<div class="description-wrapper overflow-hidden ">
 										<a href="<?= $content['btn_url']['url'] ?>">
-											<p class="mb-8 text-phara"><?= $content['description'] ?></p>
+											<p class="mb-8 text-phara text-white"><?= $content['description'] ?></p>
 										</a>
 									</div>
 									<div class="button-wrapper">
 										<div class="inner-button inline-block relative">
-											<a href="<?= $content['btn_url']['url'] ?>" class="text-phara"><?= $content['btn_text'] ?></a>
+											<a href="<?= $content['btn_url']['url'] ?>" class="text-phara text-white"><?= $content['btn_text'] ?></a>
 											<div class="bottom-line absolute -bottom-[4px] w-[26px;] h-[2px]" style="background-color: #D75C00;"></div>
 										</div>
 									</div>
