@@ -26,4 +26,34 @@
     .slide-item.active .overlay-button-wrapper {
         rotate: 45deg;
     }
+
+    
+
+
+
+
+    .image-wrapper {
+        padding-top: 150%;
+    }
+    @media(max-width: 1024px) {
+        .object-left {
+            object-position: left;
+        }
+        .object-right {
+            object-position: right;
+        }
+        .object-center {
+            object-position: center;
+        }
+    }
+    @media(min-width:768px) {
+        .image-wrapper {
+            padding-top: 100%;
+        }
+    }
+    @media(min-width: 1024px) {
+        .image-wrapper {
+            padding-top: 60%;
+        }
+    }
 }
