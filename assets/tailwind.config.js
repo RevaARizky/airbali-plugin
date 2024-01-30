@@ -17,5 +17,11 @@ module.exports = {
 
     },
   },
+  colors: {
+    'dark-grey': '#636569',
+    'darker-grey': '#414A50',
+    'airbali-theme': '#D75C00',
+    white: '#ffffff'
+  },
 }
 
