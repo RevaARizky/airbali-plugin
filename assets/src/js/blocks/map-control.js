@@ -19,8 +19,8 @@
 
         const initMapCustomAction = () => {
             let map = jQuery('.wpgmp_map').data('wpgmp_maps')
-            map.infobox.setOptions({ pixelOffset: new google.maps.Size(-150, -55), alignBottom: true, boxStyle: { width: "300px" } })
             let markers = map.places
+            map.infobox.setOptions({ pixelOffset: new google.maps.Size(-150, -55), alignBottom: true, boxStyle: { width: "300px" } })
 
             const iconHandler = (act) => {
                 markers.forEach(data => {
@@ -28,12 +28,14 @@
                 })
                 return
             }
+            iconHandler(null)
 
-            document.querySelector('.map-icon-trigger').addEventListener('change', (e) => { e.currentTarget.checked ? iconHandler(map.map) : iconHandler(null) })
+            // document.querySelector('.map-icon-trigger').addEventListener('change', (e) => { e.currentTarget.checked ? iconHandler(map.map) : iconHandler(null) })
 
             const popupHandler = (i) => {
                 markers.forEach(data => {
                     if(data.id == i) {
+                        data.marker.setMap(map.map)
                         map.infobox.setContent(data.infowindow_data)
                         map.infobox.open(data.marker.map, data.marker)
                     }
