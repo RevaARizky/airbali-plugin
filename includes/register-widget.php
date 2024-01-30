@@ -8,7 +8,7 @@
  * @param \Elementor\Widgets_Manager $widgets_manager Elementor widgets manager.
  * @return void
  */
-function register_additonal_blocks( $widgets_manager ) {
+function register_additional_blocks( $widgets_manager ) {
 
 	require_once( __DIR__ . '/../widgets/carousel-widget.php' );
 
