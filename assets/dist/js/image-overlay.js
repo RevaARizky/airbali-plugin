@@ -20,11 +20,13 @@ var __webpack_exports__ = {};
           imageWrapper.classList.add('active');
         }
       });
+      console.log(jQuery(el).siblings());
       if (jQuery(el).siblings().css('height') > minHeight) {
         minHeight = jQuery(el).siblings().css('height');
       }
     });
     mainel.forEach(function (el) {
+      console.log(mainel);
       jQuery(el).siblings().css('height', "".concat(minHeight, "px"));
     });
   });

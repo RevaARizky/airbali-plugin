@@ -19,7 +19,7 @@
                     imageWrapper.classList.add('active')
                 }
             })
-
+            console.log(jQuery(el).siblings())
             if(jQuery(el).siblings().css('height') > minHeight) {
                 minHeight = jQuery(el).siblings().css('height')
             }
@@ -27,6 +27,7 @@
         })
 
         mainel.forEach(el => {
+            console.log(mainel)
             jQuery(el).siblings().css('height', `${minHeight}px`)
         })
         
