@@ -29,7 +29,7 @@ import { ScrollToPlugin } from "gsap/all"
 
         const checkResize = () => {
             if(window.innerWidth >= 1024) {
-                document.querySelector('.slider-block .slider-wrapper').style.width = sliderWidth
+                document.querySelector('.slider-block .slider-wrapper').style.width = `${sliderWidth}px`
             } else {
                 document.querySelector('.slider-block .slider-wrapper').style.width = '100%'
             }

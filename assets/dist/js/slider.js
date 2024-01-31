@@ -9970,7 +9970,7 @@ __webpack_require__.r(__webpack_exports__);
     document.querySelector('.slider-block .slider-wrapper').classList.add('lg:flex');
     var checkResize = function checkResize() {
       if (window.innerWidth >= 1024) {
-        document.querySelector('.slider-block .slider-wrapper').style.width = sliderWidth;
+        document.querySelector('.slider-block .slider-wrapper').style.width = "".concat(sliderWidth, "px");
       } else {
         document.querySelector('.slider-block .slider-wrapper').style.width = '100%';
       }
