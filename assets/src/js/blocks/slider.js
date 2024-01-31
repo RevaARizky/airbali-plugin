@@ -1,11 +1,9 @@
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-import { ScrollSmoother } from "gsap/ScrollSmoother"
 import { ScrollToPlugin } from "gsap/all"
-
 (() => {
 
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', () => {
         var calculateContainer = 0
         gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
         if(!document.querySelector('.slider-block.custom-block')) {

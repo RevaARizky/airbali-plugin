@@ -1,1 +1,38 @@
-jQuery,document.addEventListener("DOMContentLoaded",(function(){var e=document.querySelector(".itrac-block");if(!e)return!1;e.querySelectorAll(".icon-popup-trigger").forEach((function(t){t.addEventListener("click",(function(){var r=JSON.parse(t.dataset.content),n=e.querySelector(".popup-target");n.querySelector(".image-target").src=r.contentImage.url,n.querySelector(".title-target").innerHTML=r.title,n.querySelector(".content-target").innerHTML=r.contentDescription,n.classList.remove("hidden")}))}));var t=function(){var t=e.querySelector(".popup-target");t.classList.add("hidden"),t.querySelector(".image-target").src="",t.querySelector(".title-target").innerHTML="",t.querySelector(".content-target").innerHTML=""};e.querySelector(".popup-target .overlay").addEventListener("click",(function(e){t()})),e.querySelector(".popup-target .close-button").addEventListener("click",(function(e){t()}))}));
+/******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+/*!********************************!*\
+  !*** ./src/js/blocks/itrac.js ***!
+  \********************************/
+(function ($) {
+  document.addEventListener("DOMContentLoaded", function () {
+    var mainel = document.querySelector('.itrac-block');
+    if (!mainel) {
+      return false;
+    }
+    mainel.querySelectorAll('.icon-popup-trigger').forEach(function (el) {
+      el.addEventListener('click', function () {
+        var content = JSON.parse(el.dataset.content);
+        var popup = mainel.querySelector('.popup-target');
+        popup.querySelector('.image-target').src = content.contentImage.url;
+        popup.querySelector('.title-target').innerHTML = content.title;
+        popup.querySelector('.content-target').innerHTML = content.contentDescription;
+        popup.classList.remove('hidden');
+      });
+    });
+    var hidePopup = function hidePopup() {
+      var popup = mainel.querySelector('.popup-target');
+      popup.classList.add('hidden');
+      popup.querySelector('.image-target').src = '';
+      popup.querySelector('.title-target').innerHTML = '';
+      popup.querySelector('.content-target').innerHTML = '';
+    };
+    mainel.querySelector('.popup-target .overlay').addEventListener('click', function (e) {
+      hidePopup();
+    });
+    mainel.querySelector('.popup-target .close-button').addEventListener('click', function (e) {
+      hidePopup();
+    });
+  });
+})(jQuery);
+/******/ })()
+;
