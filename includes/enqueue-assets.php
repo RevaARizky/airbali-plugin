@@ -7,14 +7,14 @@ add_action('wp_enqueue_scripts', function () {
 
     /** Register custom CSS */
     $styleName = 'elementor-style-custom';
-    wp_register_style("$styleName-carousel", additional_blocks_assets_url('/dist/css/carousel.css'), [], null);
+    wp_register_style("$styleName-carousel", additional_blocks_assets_url('/dist/css/_carousel.css'), [], null);
     wp_register_style("$styleName-gallery", additional_blocks_assets_url('/dist/css/_gallery.css'), [], null);
-    wp_register_style("$styleName-image-overlay", additional_blocks_assets_url('/dist/css/image-overlay.css'), [], null);
-    wp_register_style("$styleName-itrac", additional_blocks_assets_url('/dist/css/itrac.css'), [], null);
-    wp_register_style("$styleName-map-control", additional_blocks_assets_url('/dist/css/map-control.css'), [], null);
-    wp_register_style("$styleName-slider", additional_blocks_assets_url('/dist/css/slider.css'), [], null);
-    wp_register_style("$styleName-team", additional_blocks_assets_url('/dist/css/team.css'), [], null);
-    wp_register_style("$styleName-text-hover", additional_blocks_assets_url('/dist/css/text-hover.css'), [], null);
+    wp_register_style("$styleName-image-overlay", additional_blocks_assets_url('/dist/css/_image-overlay.css'), [], null);
+    wp_register_style("$styleName-itrac", additional_blocks_assets_url('/dist/css/_itrac.css'), [], null);
+    wp_register_style("$styleName-map-control", additional_blocks_assets_url('/dist/css/_map-control.css'), [], null);
+    wp_register_style("$styleName-slider", additional_blocks_assets_url('/dist/css/_slider.css'), [], null);
+    wp_register_style("$styleName-team", additional_blocks_assets_url('/dist/css/_team.css'), [], null);
+    wp_register_style("$styleName-text-hover", additional_blocks_assets_url('/dist/css/_text-hover.css'), [], null);
 
     /** Register custom JS */
     $scriptName = 'elementor-script-custom';

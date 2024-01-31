@@ -28,14 +28,14 @@ mix
   .js("src/js/blocks/slider.js", "dist/js")
   .js("src/js/blocks/text-hover.js", "dist/js")
 
-  .sass("src/scss/blocks/carousel.scss", "dist/css")
+  .sass("src/scss/blocks/_carousel.scss", "dist/css")
   .sass("src/scss/blocks/_gallery.scss", "dist/css")
-  .sass("src/scss/blocks/image-overlay.scss", "dist/css")
-  .sass("src/scss/blocks/itrac.scss", "dist/css")
-  .sass("src/scss/blocks/map-control.scss", "dist/css")
-  .sass("src/scss/blocks/slider.scss", "dist/css")
-  .sass("src/scss/blocks/team.scss", "dist/css")
-  .sass("src/scss/blocks/text-hover.scss", "dist/css")
+  .sass("src/scss/blocks/_image-overlay.scss", "dist/css")
+  .sass("src/scss/blocks/_itrac.scss", "dist/css")
+  .sass("src/scss/blocks/_map-control.scss", "dist/css")
+  .sass("src/scss/blocks/_slider.scss", "dist/css")
+  .sass("src/scss/blocks/_team.scss", "dist/css")
+  .sass("src/scss/blocks/_text-hover.scss", "dist/css")
   .options({
     processCssUrls: false,
     postCss: [require("tailwindcss")],
