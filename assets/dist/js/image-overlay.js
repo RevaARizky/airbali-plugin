@@ -23,8 +23,8 @@ var __webpack_exports__ = {};
     var minHeight = 0;
     var sameHeight = function sameHeight(param) {
       document.querySelectorAll(param).forEach(function (el) {
-        if (jQuery(el).siblings().css('height') > minHeight) {
-          minHeight = jQuery(el).siblings().css('height');
+        if (jQuery(el).siblings().height() > minHeight) {
+          minHeight = jQuery(el).siblings().height();
         }
       });
       document.querySelectorAll(param).forEach(function (el) {
