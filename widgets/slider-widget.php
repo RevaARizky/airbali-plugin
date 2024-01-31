@@ -208,52 +208,54 @@ class Elementor_Slider_Widget extends \Elementor\Widget_Base {
         $settings = $this->get_settings_for_display();
         ?>
         <section class="slider-block custom-block calculate-container" data-calculate-container="120">
-			<div class="outer-wrapper bg-dark-grey overflow-x-hidden">
-				<div class="container relative">
-					<div class="navigation-slider gap-x-10 px-12 py-4 justify-center mt-4 hidden lg:flex" style="border-top: 1px solid #fff; border-bottom: 1px solid #fff; margin-bottom: 2.2rem;">
-						<?php foreach($settings['slider_items'] as $index => $value) : ?>
-							<a href="javascript:void(0)">
-								<div class="navigation flex items-center gap-x-2<?= $index == 0 ? ' active' : '' ?>" data-index="<?= $index+1 ?>">
-									<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 14 14" fill="none">
-										<circle cx="7" cy="7" r="7" fill="white"/>
-									</svg>
-									<p class="text-white uppercase" style="font-size: 18px; margin-bottom: 0;">
-										<?= $value['title'] ?>
-									</p>
-								</div>
-							</a>
-						<?php endforeach; ?>
-					</div>
-
-					<div class="slider-wrapper flex-nowrap">
-
-						<?php foreach($settings['slider_items'] as $index=>$value) : ?>
-							<div class="slide-item mb-8 lg:mb-0 shrink-1 grow-0 lg:w-[50vw]<?= $index+1 == count($settings['slider_items']) ? ' lg:pr-12' : ' lg:pr-12' ?>" data-overlay="<?= $index ?>">
-								<div class="image-wrapper relative mb-7">
-									<div class="overlay-button-wrapper absolute bottom-4 right-4 cursor-pointer z-20" data-target="<?= $index ?>">
-										<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M4.62681e-08 17.7504C0.000611021 9.28239 5.98284 1.99405 14.2882 0.342583C22.5936 -1.30888 30.909 3.13647 34.1491 10.9601C37.3892 18.7837 34.6515 27.8065 27.6104 32.5107C20.5692 37.2149 11.1856 36.2902 5.19818 30.3021C1.86951 26.9731 -0.000339619 22.4581 4.62681e-08 17.7504Z" fill="#D75C00"/>
-											<path d="M11.0938 16.7505C10.5415 16.7505 10.0938 17.1982 10.0938 17.7505C10.0938 18.3027 10.5415 18.7505 11.0938 18.7505V16.7505ZM17.75 18.7505C18.3022 18.7505 18.75 18.3027 18.75 17.7505C18.75 17.1982 18.3022 16.7505 17.75 16.7505V18.7505ZM17.75 16.7505C17.1977 16.7505 16.75 17.1982 16.75 17.7505C16.75 18.3027 17.1977 18.7505 17.75 18.7505V16.7505ZM24.4062 18.7505C24.9585 18.7505 25.4062 18.3027 25.4062 17.7505C25.4062 17.1982 24.9585 16.7505 24.4062 16.7505V18.7505ZM18.7503 17.7505C18.7503 17.1982 18.3026 16.7505 17.7503 16.7505C17.1981 16.7505 16.7503 17.1982 16.7503 17.7505H18.7503ZM16.7503 24.4067C16.7503 24.959 17.1981 25.4067 17.7503 25.4067C18.3026 25.4067 18.7503 24.959 18.7503 24.4067H16.7503ZM16.7503 17.7504C16.7503 18.3027 17.1981 18.7504 17.7503 18.7504C18.3026 18.7504 18.7503 18.3027 18.7503 17.7504H16.7503ZM18.7503 11.0942C18.7503 10.542 18.3026 10.0942 17.7503 10.0942C17.1981 10.0942 16.7503 10.542 16.7503 11.0942H18.7503ZM11.0938 18.7505H17.75V16.7505H11.0938V18.7505ZM17.75 18.7505H24.4062V16.7505H17.75V18.7505ZM16.7503 17.7505V24.4067H18.7503V17.7505H16.7503ZM18.7503 17.7504V11.0942H16.7503V17.7504H18.7503Z" fill="white"/>
+			<div class="overflow-x-hidden">
+				<div class="outer-wrapper bg-dark-grey">
+					<div class="container relative">
+						<div class="navigation-slider gap-x-10 px-12 py-4 justify-center mt-4 hidden lg:flex" style="border-top: 1px solid #fff; border-bottom: 1px solid #fff; margin-bottom: 2.2rem;">
+							<?php foreach($settings['slider_items'] as $index => $value) : ?>
+								<a href="javascript:void(0)">
+									<div class="navigation flex items-center gap-x-2<?= $index == 0 ? ' active' : '' ?>" data-index="<?= $index+1 ?>">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 14 14" fill="none">
+											<circle cx="7" cy="7" r="7" fill="white"/>
 										</svg>
+										<p class="text-white uppercase" style="font-size: 18px; margin-bottom: 0;">
+											<?= $value['title'] ?>
+										</p>
 									</div>
-									<div class="bg-darker-grey overlay-content-wrapper absolute -inset-[1px] flex justify-center flex-start flex-column px-8 lg:px-16 z-10" data-overlay="<?= $index ?>">
-										<p class="text-white text-overlay"><?= $value['overlay'] ?></p>
+								</a>
+							<?php endforeach; ?>
+						</div>
+	
+						<div class="slider-wrapper flex-nowrap">
+	
+							<?php foreach($settings['slider_items'] as $index=>$value) : ?>
+								<div class="slide-item mb-8 lg:mb-0 shrink-1 grow-0 lg:w-[50vw]<?= $index+1 == count($settings['slider_items']) ? ' lg:pr-12' : ' lg:pr-12' ?>" data-overlay="<?= $index ?>">
+									<div class="image-wrapper relative mb-7">
+										<div class="overlay-button-wrapper absolute bottom-4 right-4 cursor-pointer z-20" data-target="<?= $index ?>">
+											<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M4.62681e-08 17.7504C0.000611021 9.28239 5.98284 1.99405 14.2882 0.342583C22.5936 -1.30888 30.909 3.13647 34.1491 10.9601C37.3892 18.7837 34.6515 27.8065 27.6104 32.5107C20.5692 37.2149 11.1856 36.2902 5.19818 30.3021C1.86951 26.9731 -0.000339619 22.4581 4.62681e-08 17.7504Z" fill="#D75C00"/>
+												<path d="M11.0938 16.7505C10.5415 16.7505 10.0938 17.1982 10.0938 17.7505C10.0938 18.3027 10.5415 18.7505 11.0938 18.7505V16.7505ZM17.75 18.7505C18.3022 18.7505 18.75 18.3027 18.75 17.7505C18.75 17.1982 18.3022 16.7505 17.75 16.7505V18.7505ZM17.75 16.7505C17.1977 16.7505 16.75 17.1982 16.75 17.7505C16.75 18.3027 17.1977 18.7505 17.75 18.7505V16.7505ZM24.4062 18.7505C24.9585 18.7505 25.4062 18.3027 25.4062 17.7505C25.4062 17.1982 24.9585 16.7505 24.4062 16.7505V18.7505ZM18.7503 17.7505C18.7503 17.1982 18.3026 16.7505 17.7503 16.7505C17.1981 16.7505 16.7503 17.1982 16.7503 17.7505H18.7503ZM16.7503 24.4067C16.7503 24.959 17.1981 25.4067 17.7503 25.4067C18.3026 25.4067 18.7503 24.959 18.7503 24.4067H16.7503ZM16.7503 17.7504C16.7503 18.3027 17.1981 18.7504 17.7503 18.7504C18.3026 18.7504 18.7503 18.3027 18.7503 17.7504H16.7503ZM18.7503 11.0942C18.7503 10.542 18.3026 10.0942 17.7503 10.0942C17.1981 10.0942 16.7503 10.542 16.7503 11.0942H18.7503ZM11.0938 18.7505H17.75V16.7505H11.0938V18.7505ZM17.75 18.7505H24.4062V16.7505H17.75V18.7505ZM16.7503 17.7505V24.4067H18.7503V17.7505H16.7503ZM18.7503 17.7504V11.0942H16.7503V17.7504H18.7503Z" fill="white"/>
+											</svg>
+										</div>
+										<div class="bg-darker-grey overlay-content-wrapper absolute -inset-[1px] flex justify-center flex-start flex-column px-8 lg:px-16 z-10" data-overlay="<?= $index ?>">
+											<p class="text-white text-overlay"><?= $value['overlay'] ?></p>
+										</div>
+										<img src="<?= $value['image']['url'] ?>" class="absolute inset-0 w-full h-full object-cover object-<?= $value['image_position'] ?>" alt="">
 									</div>
-									<img src="<?= $value['image']['url'] ?>" class="absolute inset-0 w-full h-full object-cover object-<?= $value['image_position'] ?>" alt="">
+									<div class="text-wrapper">
+										<div class="title-wrapper mb-4">
+											<p class="text-white uppercase text-title"><?= $value['title'] ?></p>
+										</div>
+										<div class="description-wrapper hidden">
+											<p class="text-white" style="padding-bottom:15px; font-size:18px;"><?= $value['description'] ?></p>
+										</div>
+									</div>
 								</div>
-								<div class="text-wrapper">
-									<div class="title-wrapper mb-4">
-										<p class="text-white uppercase text-title"><?= $value['title'] ?></p>
-									</div>
-									<div class="description-wrapper hidden">
-										<p class="text-white" style="padding-bottom:15px; font-size:18px;"><?= $value['description'] ?></p>
-									</div>
-								</div>
-							</div>
-						<?php endforeach; ?>
-
+							<?php endforeach; ?>
+	
+						</div>
+	
 					</div>
-
 				</div>
 			</div>
         </section>
