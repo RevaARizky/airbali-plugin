@@ -7,6 +7,8 @@
             return false
         }
 
+        var minHeight = 0
+
         mainel.forEach(el => {
             var triggerButton = el.querySelector('.overlay-button-trigger')
             var imageWrapper = el.querySelector('.image-wrapper')
@@ -17,8 +19,16 @@
                     imageWrapper.classList.add('active')
                 }
             })
+
+            if(jQuery(el).siblings().css('height') > minHeight) {
+                minHeight = jQuery(el).siblings().css('height')
+            }
+            
         })
 
+        mainel.forEach(el => {
+            jQuery(el).siblings().css('height', `${minHeight}px`)
+        })
         
 
     })
