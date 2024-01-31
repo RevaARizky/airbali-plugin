@@ -8,7 +8,7 @@ add_action('wp_enqueue_scripts', function () {
     /** Register custom CSS */
     $styleName = 'elementor-style-custom';
     wp_register_style("$styleName-carousel", additional_blocks_assets_url('/dist/css/carousel.css'), [], null);
-    wp_register_style("$styleName-gallery", additional_blocks_assets_url('/dist/css/gallery.css'), [], null);
+    wp_register_style("$styleName-_gallery", additional_blocks_assets_url('/dist/css/gallery.css'), [], null);
     wp_register_style("$styleName-image-overlay", additional_blocks_assets_url('/dist/css/image-overlay.css'), [], null);
     wp_register_style("$styleName-itrac", additional_blocks_assets_url('/dist/css/itrac.css'), [], null);
     wp_register_style("$styleName-map-control", additional_blocks_assets_url('/dist/css/map-control.css'), [], null);

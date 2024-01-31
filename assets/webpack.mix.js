@@ -29,7 +29,7 @@ mix
   .js("src/js/blocks/text-hover.js", "dist/js")
 
   .sass("src/scss/blocks/carousel.scss", "dist/css")
-  .sass("src/scss/blocks/gallery.scss", "dist/css")
+  .sass("src/scss/blocks/_gallery.scss", "dist/css")
   .sass("src/scss/blocks/image-overlay.scss", "dist/css")
   .sass("src/scss/blocks/itrac.scss", "dist/css")
   .sass("src/scss/blocks/map-control.scss", "dist/css")
