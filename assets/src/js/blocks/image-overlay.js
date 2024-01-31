@@ -32,7 +32,9 @@
                 jQuery(el).siblings().css('height', `${minHeight}px`)
             })
         }
-        sameHeight('.elementor-widget.elementor-widget-custom-image-overlay')
+        setTimeout(() => {
+            sameHeight('.elementor-widget.elementor-widget-custom-image-overlay')
+        }, 2000)
         
 
     })

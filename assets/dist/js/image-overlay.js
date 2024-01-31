@@ -31,7 +31,9 @@ var __webpack_exports__ = {};
         jQuery(el).siblings().css('height', "".concat(minHeight, "px"));
       });
     };
-    sameHeight('.elementor-widget.elementor-widget-custom-image-overlay');
+    setTimeout(function () {
+      sameHeight('.elementor-widget.elementor-widget-custom-image-overlay');
+    }, 2000);
   });
 })(jQuery);
 /******/ })()
