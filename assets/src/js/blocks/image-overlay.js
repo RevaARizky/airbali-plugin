@@ -7,7 +7,6 @@
             return false
         }
 
-        var minHeight = 0
 
         mainel.forEach(el => {
             var triggerButton = el.querySelector('.overlay-button-trigger')
@@ -19,17 +18,21 @@
                     imageWrapper.classList.add('active')
                 }
             })
-            console.log(jQuery(el).siblings())
-            if(jQuery(el).siblings().css('height') > minHeight) {
-                minHeight = jQuery(el).siblings().css('height')
-            }
             
         })
-
-        mainel.forEach(el => {
-            console.log(mainel)
-            jQuery(el).siblings().css('height', `${minHeight}px`)
-        })
+        
+        var minHeight = 0
+        const sameHeight = (param) => {
+            document.querySelectorAll(param).forEach(el => {
+                if(jQuery(el).siblings().css('height') > minHeight) {
+                    minHeight = jQuery(el).siblings().css('height')
+                }
+            })
+            document.querySelectorAll(param).forEach(el => {
+                jQuery(el).siblings().css('height', `${minHeight}px`)
+            })
+        }
+        sameHeight('.elementor-widget.elementor-widget-custom-image-overlay')
         
 
     })

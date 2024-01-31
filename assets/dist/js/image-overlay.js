@@ -9,7 +9,6 @@ var __webpack_exports__ = {};
     if (!mainel.length) {
       return false;
     }
-    var minHeight = 0;
     mainel.forEach(function (el) {
       var triggerButton = el.querySelector('.overlay-button-trigger');
       var imageWrapper = el.querySelector('.image-wrapper');
@@ -20,15 +19,19 @@ var __webpack_exports__ = {};
           imageWrapper.classList.add('active');
         }
       });
-      console.log(jQuery(el).siblings());
-      if (jQuery(el).siblings().css('height') > minHeight) {
-        minHeight = jQuery(el).siblings().css('height');
-      }
     });
-    mainel.forEach(function (el) {
-      console.log(mainel);
-      jQuery(el).siblings().css('height', "".concat(minHeight, "px"));
-    });
+    var minHeight = 0;
+    var sameHeight = function sameHeight(param) {
+      document.querySelectorAll(param).forEach(function (el) {
+        if (jQuery(el).siblings().css('height') > minHeight) {
+          minHeight = jQuery(el).siblings().css('height');
+        }
+      });
+      document.querySelectorAll(param).forEach(function (el) {
+        jQuery(el).siblings().css('height', "".concat(minHeight, "px"));
+      });
+    };
+    sameHeight('.elementor-widget.elementor-widget-custom-image-overlay');
   });
 })(jQuery);
 /******/ })()
