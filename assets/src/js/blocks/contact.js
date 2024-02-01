@@ -5,7 +5,7 @@
         if(!mainel.length) {
             return false;
         }
-        // setTimeout(() => {
+        setTimeout(() => {
             const matchCustom = (params, data) => {
                 // If there are no search terms, return all of the data
                 if (jQuery.trim(params.term) === '') {
@@ -35,7 +35,7 @@
                     matcher: matchCustom
                 })
             })
-        // }, 2500)
+        }, 2500)
 
     })
 
