@@ -5,7 +5,7 @@
         //     return false;
         // }
 
-        console.log($.select2)
+        console.log(jQuery().select2)
 
     })
 

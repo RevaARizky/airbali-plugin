@@ -9,7 +9,7 @@ var __webpack_exports__ = {};
     //     return false;
     // }
 
-    console.log($.select2);
+    console.log(jQuery().select2);
   });
 })(jQuery);
 /******/ })()
