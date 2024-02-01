@@ -31,7 +31,7 @@
         }
 
         mainel.forEach(el => {
-            jQuery(el).select2({
+            jQuery(el.querySelector('select')).select2({
                 matcher: matchCustom
             })
         })

@@ -33,7 +33,7 @@ var __webpack_exports__ = {};
       return null;
     };
     mainel.forEach(function (el) {
-      jQuery(el).select2({
+      jQuery(el.querySelector('select')).select2({
         matcher: matchCustom
       });
     });
