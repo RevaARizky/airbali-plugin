@@ -25,4 +25,5 @@ add_action('wp_enqueue_scripts', function () {
     wp_register_script("$scriptName-map-control", additional_blocks_assets_url('/dist/js/map-control.js'), [], null, ['in_footer' => true, 'strategy' => 'defer']);
     wp_register_script("$scriptName-slider", additional_blocks_assets_url('/dist/js/slider.js'), [], null, ['in_footer' => true, 'strategy' => 'defer']);
     wp_register_script("$scriptName-text-hover", additional_blocks_assets_url('/dist/js/text-hover.js'), [], null, ['in_footer' => true, 'strategy' => 'defer']);
+    wp_enqueue_script("$scriptName-contact", additional_blocks_assets_url('/dist/js/contact.js'), ['jQuery'], null, ['in_footer' => true, 'strategy' => 'defer']);
 });

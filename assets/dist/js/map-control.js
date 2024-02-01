@@ -45,6 +45,8 @@ var __webpack_exports__ = {};
             data.marker.setMap(map.map);
             map.infobox.setContent(data.infowindow_data);
             map.infobox.open(data.marker.map, data.marker);
+          } else {
+            data.marker.setMap(null);
           }
         });
       };
