@@ -27,6 +27,7 @@ mix
   .js("src/js/blocks/map-control.js", "dist/js")
   .js("src/js/blocks/slider.js", "dist/js")
   .js("src/js/blocks/text-hover.js", "dist/js")
+  .js("src/js/blocks/contact.js", "dist/js")
 
   .sass("src/scss/blocks/_carousel.scss", "dist/css")
   .sass("src/scss/blocks/_gallery.scss", "dist/css")
