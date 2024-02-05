@@ -157,6 +157,12 @@
   .slider-block .right-0 {
   right: 0px;
 }
+  .slider-block .right-24 {
+  right: 6rem;
+}
+  .slider-block .right-28 {
+  right: 7rem;
+}
   .slider-block .right-4 {
   right: 1rem;
 }
@@ -168,6 +174,9 @@
 }
   .slider-block .top-4 {
   top: 1rem;
+}
+  .slider-block .top-\[24px\] {
+  top: 24px;
 }
   .slider-block .-z-10 {
   z-index: -10;
@@ -254,9 +263,6 @@
   .slider-block .h-full {
   height: 100%;
 }
-  .slider-block .max-h-full {
-  max-height: 100%;
-}
   .slider-block .w-\[100px\] {
   width: 100px;
 }
@@ -274,10 +280,6 @@
 }
   .slider-block .grow-0 {
   flex-grow: 0;
-}
-  .slider-block .-translate-x-1\/2 {
-  --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
   .slider-block .translate-y-1\/4 {
   --tw-translate-y: 25%;

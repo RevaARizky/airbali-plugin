@@ -160,6 +160,12 @@
   .gallery-block.custom-block .right-0 {
   right: 0px
 }
+  .gallery-block.custom-block .right-24 {
+  right: 6rem
+}
+  .gallery-block.custom-block .right-28 {
+  right: 7rem
+}
   .gallery-block.custom-block .right-4 {
   right: 1rem
 }
@@ -171,6 +177,9 @@
 }
   .gallery-block.custom-block .top-4 {
   top: 1rem
+}
+  .gallery-block.custom-block .top-\[24px\] {
+  top: 24px
 }
   .gallery-block.custom-block .-z-10 {
   z-index: -10
@@ -257,9 +266,6 @@
   .gallery-block.custom-block .h-full {
   height: 100%
 }
-  .gallery-block.custom-block .max-h-full {
-  max-height: 100%
-}
   .gallery-block.custom-block .w-\[100px\] {
   width: 100px
 }
@@ -277,10 +283,6 @@
 }
   .gallery-block.custom-block .grow-0 {
   flex-grow: 0
-}
-  .gallery-block.custom-block .-translate-x-1\/2 {
-  --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
 }
   .gallery-block.custom-block .translate-y-1\/4 {
   --tw-translate-y: 25%;

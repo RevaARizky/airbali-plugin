@@ -428,6 +428,14 @@
   right: 0px;
 }
 
+.carousel-block .right-24 {
+  right: 6rem;
+}
+
+.carousel-block .right-28 {
+  right: 7rem;
+}
+
 .carousel-block .right-4 {
   right: 1rem;
 }
@@ -442,6 +450,10 @@
 
 .carousel-block .top-4 {
   top: 1rem;
+}
+
+.carousel-block .top-\[24px\] {
+  top: 24px;
 }
 
 .carousel-block .-z-10 {
@@ -557,10 +569,6 @@
   height: 100%;
 }
 
-.carousel-block .max-h-full {
-  max-height: 100%;
-}
-
 .carousel-block .w-\[100px\] {
   width: 100px;
 }
@@ -583,11 +591,6 @@
 
 .carousel-block .grow-0 {
   flex-grow: 0;
-}
-
-.carousel-block .-translate-x-1\/2 {
-  --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .carousel-block .translate-y-1\/4 {

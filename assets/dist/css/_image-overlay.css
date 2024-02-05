@@ -157,6 +157,12 @@
   .image-overlay-block .right-0 {
   right: 0px;
 }
+  .image-overlay-block .right-24 {
+  right: 6rem;
+}
+  .image-overlay-block .right-28 {
+  right: 7rem;
+}
   .image-overlay-block .right-4 {
   right: 1rem;
 }
@@ -168,6 +174,9 @@
 }
   .image-overlay-block .top-4 {
   top: 1rem;
+}
+  .image-overlay-block .top-\[24px\] {
+  top: 24px;
 }
   .image-overlay-block .-z-10 {
   z-index: -10;
@@ -254,9 +263,6 @@
   .image-overlay-block .h-full {
   height: 100%;
 }
-  .image-overlay-block .max-h-full {
-  max-height: 100%;
-}
   .image-overlay-block .w-\[100px\] {
   width: 100px;
 }
@@ -274,10 +280,6 @@
 }
   .image-overlay-block .grow-0 {
   flex-grow: 0;
-}
-  .image-overlay-block .-translate-x-1\/2 {
-  --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
   .image-overlay-block .translate-y-1\/4 {
   --tw-translate-y: 25%;
