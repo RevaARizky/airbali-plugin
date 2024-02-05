@@ -25,18 +25,12 @@ import SplitText from "gsap/SplitText"
             el.addEventListener('click', () => {
                 mainel.querySelector('.popup-target').classList.remove('hidden')
                 popupSlider.slideTo(el.dataset.index)
-                // popup.querySelector('.image-target').src = content.contentImage.url
-                // popup.querySelector('.title-target').innerHTML = content.title
-                // popup.querySelector('.content-target').innerHTML = content.contentDescription
             })
         })
 
         const hidePopup = () => {
             var popup = mainel.querySelector('.popup-target')
             popup.classList.add('hidden')
-            // popup.querySelector('.image-target').src = ''
-            // popup.querySelector('.title-target').innerHTML = ''
-            // popup.querySelector('.content-target').innerHTML = ''
         }
 
         mainel.querySelector('.popup-target .prev-button').addEventListener('click', e => {

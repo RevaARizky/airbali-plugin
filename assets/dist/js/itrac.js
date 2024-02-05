@@ -17592,20 +17592,12 @@ __webpack_require__.r(__webpack_exports__);
       el.addEventListener('click', function () {
         mainel.querySelector('.popup-target').classList.remove('hidden');
         popupSlider.slideTo(el.dataset.index);
-        // popup.querySelector('.image-target').src = content.contentImage.url
-        // popup.querySelector('.title-target').innerHTML = content.title
-        // popup.querySelector('.content-target').innerHTML = content.contentDescription
       });
     });
-
     var hidePopup = function hidePopup() {
       var popup = mainel.querySelector('.popup-target');
       popup.classList.add('hidden');
-      // popup.querySelector('.image-target').src = ''
-      // popup.querySelector('.title-target').innerHTML = ''
-      // popup.querySelector('.content-target').innerHTML = ''
     };
-
     mainel.querySelector('.popup-target .prev-button').addEventListener('click', function (e) {
       popupSlider.slidePrev();
     });
